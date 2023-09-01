@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+   <div id="mainbody">
+    <nav>
+        <p class="music-name">My-Music</p>
+        <div class="dots">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+        </div>
+    </nav>
+    <div class="play">
+        <div class="mycolor">
+            <div class="box">
+                <img src="/image/p10.jpeg" alt="" id="mysongimg">
+            </div>
+        </div>
+
+        <div class="Afterimg">
+            <div class="in"></div>
+                <div class="infosong">
+                    <p id="songname">Lover</p>
+                </div>
+            <div class="audio">
+                <audio id="song">
+                    <source src="Songs/s10.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="side">
+                <!-- progress -->
+                <div class="progressbar">
+                    <input type="range" value="0" id="progress">
+                </div> 
+                
+                <!-- forword-backword -->
+                <div class="remain">
+                    <i class="fa-solid fa-backward c1 centerc1 "id="left" onclick="leftnext()"></i>
+                    <i class="fa-solid fa-play c1 centerc1" id="ctrIcon" onclick="playPauseFunction()"></i>
+                    <i class="fa-solid fa-forward c1 centerc1"id="right" onclick="rightnext()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
